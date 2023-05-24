@@ -1,0 +1,602 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+
+    background-color: #f5f5f5;
+}
+
+.navbar img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.5rem;
+}
+
+.navbar {
+    background-color: #4f4ffd;
+    padding: 5rem;
+}
+
+.my-navbar .navbar-brand {
+    color: white;
+    margin-left: 3rem;
+}
+
+.my-navbar .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: white;
+    margin-left: 3rem;
+}
+
+.header-container {
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+
+.header-container h5 {
+    color: gray;
+}
+
+.header-container h1 {
+    width: 50%;
+}
+
+.header-container p {
+    margin-bottom: 1rem;
+}
+
+.header-container p:nth-last-child(1) {
+    margin-bottom: 3rem;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: #003d72;
+}
+
+.articles {
+    width: 45%;
+    margin-left: 10rem;
+    margin-bottom: 6rem;
+}
+
+.articles a {
+    text-decoration: none;
+    color: #003d72;
+}
+
+.articles a:hover {
+    text-decoration: underline;
+}
+
+.article-read-more {
+    font-style: italic;
+}
+
+.article {
+    width: 50%;
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.form-container textarea {
+    resize: none;
+}
+
+/***** Footer ****/
+
+.footer-block {
+    background-color: #4f4ffd;
+    padding: 3rem;
+    color: white;
+}
+
+.footer-block .newsletter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter {
+    margin-top: 2rem;
+}
+
+.newsletter input {
+    border: 0;
+    padding: 0.5rem 14rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+.newsletter button {
+    border: 0;
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-info {
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-info a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+    color: #d0d0d0;
+}
+
+.footer-block h6 {
+    margin-top: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-info .footer-info-item {
+    margin: 0 auto;
+}
+
+/******** FORM ********/
+
+.form-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+input, select {
+    width: 35%;
+    padding: 0.6rem 1rem;
+    border-radius: 15px;
+    border: solid 1px lightblue;
+}
+
+#article-textarea textarea{
+    resize: none;
+}
+
+#textarea-perex {
+    width: 35%;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    height: 15rem;
+    border: solid 1px lightblue;
+}
+
+#perexWordCount {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.author-selection{
+    margin-top: 2rem;
+}
+
+.word-count {
+    color: gray;
+}
+
+main .category-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+    color: #003d72;
+}
+
+.category-selection {
+    padding: 0.8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: white;
+}
+
+.checkbox-dropdown-list input[type="checkbox"] {
+    width: 5%;
+}
+
+.form-container input[type="submit"] {
+    margin-top: 3rem;
+    padding: 0.6rem 2rem;
+    background-color: #00ff00;
+    color: black;
+}
+
+/******* ADMIN ********/
+
+.admin-header-container h1{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+header .admin-add{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.admin-form-editor input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.admin-form-category input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.admin-form-editor button {
+    padding: 1rem;
+    border: 1px solid lightblue;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+}
+
+.admin-form-category button {
+    padding: 1rem;
+    border: 1px solid lightblue;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+}
+
+/********* ADMIN EDITOR **********/
+
+.admin-form-editor {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.admin-form-editor input {
+    margin-bottom: 1rem;
+}
+
+.admin-form-editor button {
+    margin-top: 1rem;
+    background-color: #00ff80;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+.admin-header-container {
+    text-align: center;
+}
+
+.admin-header-container h1 {
+    margin-bottom: 1rem;
+}
+
+.admin-all-editors {
+    text-align: center;
+}
+
+.admin-all-editors h2 {
+    margin-bottom: 1rem;
+}
+
+.admin-all-editors table {
+    margin: 0 auto;
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid lightblue;
+}
+
+.admin-all-editors table td,th {
+    padding: 0.5rem;
+}
+
+.admin-all-editors th{
+    background-color: #4f4ffd;
+    color: white;
+}
+
+.admin-all-editors table tbody td {
+    border-radius: 15px 15px 0 0;
+}
+
+.admin-all-editors table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.admin-all-categories {
+    text-align: center;
+}
+
+.admin-all-categories h2 {
+    margin-bottom: 1rem;
+}
+
+.admin-all-categories table {
+    margin: 0 auto;
+    width: 40%;
+    border-collapse: collapse;
+    border: 1px solid lightblue;
+}
+
+.admin-all-categories table td,th {
+    padding: 0.5rem;
+}
+
+.admin-all-categories th{
+    background-color: #4f4ffd;
+    color: white;
+}
+
+.admin-all-categories table tbody td {
+    border-radius: 15px 15px 0 0;
+}
+
+.admin-all-categories table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+/******* DROPDOWN CHECKBOX ********/
+.checkbox-dropdown {
+    width: 35%;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    padding: 0.6rem 1.4rem;
+    position: relative;
+    margin: 0 auto;
+    user-select: none;
+}
+
+/* Display CSS arrow to the right of the dropdown text */
+.checkbox-dropdown:after {
+    content:'';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 6px solid transparent;
+    border-top-color: #000;
+    top: 50%;
+    right: 10px;
+    margin-top: -3px;
+}
+
+/* Reverse the CSS arrow when the dropdown is active */
+.checkbox-dropdown.is-active:after {
+    border-bottom-color: #000;
+    border-top-color: #fff;
+    margin-top: -9px;
+}
+
+.checkbox-dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%; /* align the dropdown right below the dropdown text */
+    border: inherit;
+    border-top: none;
+    left: -1px; /* align the dropdown to the left */
+    right: -1px; /* align the dropdown to the right */
+    opacity: 0; /* hide the dropdown */
+
+    transition: opacity 0.1s ease-in-out;
+    height: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
+    pointer-events: none; /* avoid mouse click events inside the dropdown */
+}
+
+.margin-bottom {
+    margin-bottom: 4.2rem;
+}
+
+.is-active .checkbox-dropdown-list {
+    opacity: 1; /* display the dropdown */
+    pointer-events: auto; /* make sure that the user still can select checkboxes */
+}
+
+.checkbox-dropdown-list li label {
+    display: block;
+    border-bottom: 1px solid silver;
+    padding: 10px;
+
+    transition: all 0.2s ease-out;
+}
+
+.checkbox-dropdown-list li label:hover {
+    background-color: lightgreen;
+    color: white;
+}
+
+/********* ChangePassword **********/
+
+.register-form
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.register-form input
+{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.register-form button{
+    background-color: #00ff80;
+    padding: 0.6rem 2rem;
+    border-radius: 15px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    border: 1px solid lightblue;
+}
+
+
+/********* LOGIN **********/
+
+
+.logout {
+    display: flex;
+    flex-direction: row;
+}
+
+.my-navbar .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: white;
+    margin-left: 3rem;
+    margin-top: 0.3rem;
+}
+
+.display-none {
+    display: none;
+}
+
+
+
+/********** RESPONSIVE **********/
+
+@media only screen and (max-width: 1700px){
+
+    /**** ADMIN AUTHOR ****/
+    .admin-form-editor {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+
+    /**** ADMIN AUTHOR ****/
+    .admin-form-editor {
+        width: 35%;
+    }
+@media only screen and (max-width: 900px){
+
+    /**** ADMIN AUTHOR ****/
+    .admin-form-editor {
+        width: 45%;
+    }
+
+    /**** ADMIN ARTICLE ****/
+    .form-container input{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #textarea-perex {
+        width: 50%;
+    }
+}
+}
+
+@media only screen and (max-width: 588px) {
+
+    /**** ARTICLES ****/
+    .header-container {
+        margin-left: 0;
+        text-align: center;
+    }
+    .header-container h1 {
+        width: 100%;
+    }
+
+
+    /**** ADMIN ****/
+
+    header .admin-add{
+        margin-top: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /**** ADMIN CATEGORY ****/
+
+    .admin-all-categories table {
+        width: 80%;
+    }
+
+    .admin-form-editor {
+        margin-top: 3rem;
+        width: 80%;
+    }
+
+    /**** ADMIN AUTHOR ****/
+
+    .admin-all-editors table {
+        width: 80%;
+    }
+
+    /**** ADMIN ARTICLE ****/
+    .form-container input {
+          width: 80%;
+    }
+
+    #textarea-perex {
+        width: 80%;
+    }
+
+    .tiny-editor-edit {
+        height: 100px;
+        width: 100px;
+    }
+
+    input, select {
+        width: 80%;
+    }
+
+    .checkbox-dropdown {
+        width: 80%;
+    }
+
+    .deactivated-user > .admin-all-editors td span{
+        text-decoration: line-through;
+    }
+
+    /**** FOOTER ****/
+
+    .footer-info {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-info-item {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    /**** ARTICLES ****/
+
+    .articles {
+        width: 60%;
+        margin-left: 8rem;
+    }
+
+}
+
+@media only screen and (max-width: 434px){
+
+        /**** ARTICLES ****/
+
+    .articles {
+        width: 60%;
+        margin-left: 6rem;
+    }
+
+}
